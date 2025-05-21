@@ -1,0 +1,41 @@
+{
+  "header": {
+    "logout": "Cerrar Sesión",
+    "title": "Weather Page"
+  },
+  "login": {
+    "title": "Iniciar Sesión",
+    "username": "Usuario: ",
+    "password": "Contraseña: ",
+    "submit": "Entrar",
+    "missingData": "Este campo es obligatorio",
+    "invalidData": "Usuario o contraseña incorrectos"
+  },
+  "navBar": {
+    "contact": "Contacta"
+  },
+  "weather": {
+    "error": "Ha habido un error al obtener el tiempo",
+    "retry": "Volver a cargar el tiempo",
+    "loading": "Cargando el tiempo...",
+    "day": "Día: ",
+    "max": "Max: ",
+    "min": "Min: ",
+    "interval": {
+      "temperature": "Temperatura",
+      "probability": "Probabilidad de lluvia",
+      "wind": "Viento",
+      "description": "Pronóstico"
+    }
+  },
+  "contact": {
+    "title": "Contacta",
+    "subtitle": "Escríbenos y te responderemos lo antes posible",
+    "name": "Nombre y Apellidos: ",
+    "email": "Email: ",
+    "phone": "Teléfono: ",
+    "birth": "Fecha de nacimiento: ",
+    "submit": "Enviar",
+    "success": "Mensaje enviado correctamente de {{name}}"
+  }
+}

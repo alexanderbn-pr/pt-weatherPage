@@ -1,0 +1,71 @@
+@use '../../style/mixins.scss' as *;
+
+.weather-day {
+  @include d-flex(row, center, center, 5vw);
+  flex-wrap: wrap;
+  height: 100%;
+  cursor: pointer;
+
+  article:hover,
+  article:focus {
+    transform: translateY(-4px) scale(1.03);
+  }
+  h3 {
+    margin: 0;
+    color: #1976d2;
+  }
+  h4 {
+    margin: 0;
+  }
+  &-icon {
+    width: 100%;
+    height: 100%;
+  }
+  &-selected {
+    border-bottom: 4px solid #1976d2;
+  }
+  &-interval {
+    display: table;
+    width: 60%;
+    height: auto;
+    padding: 4vh;
+    &-description {
+      @include d-flex(row, space-between, center);
+      text-transform: capitalize;
+      width: 70%;
+      margin-left: 2vw;
+    }
+    thead {
+      background: #1976d2;
+      color: #fff;
+
+      th {
+        padding: 0.8vw 0.7vw;
+        font-weight: 600;
+        text-align: center;
+      }
+    }
+
+    tbody {
+      tr {
+        &:hover {
+          background: #616060;
+        }
+      }
+
+      td {
+        padding: 0.8vw 0.7vw;
+        text-align: center;
+        border-bottom: 1px solid #616060;
+        &:first-child {
+          font-weight: bold;
+          color: #1976d2;
+        }
+      }
+
+      tr:last-child td {
+        border-bottom: none;
+      }
+    }
+  }
+}

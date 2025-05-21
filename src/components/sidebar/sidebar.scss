@@ -1,0 +1,31 @@
+@use '../../style/mixins.scss' as *;
+
+.sidebar {
+  box-sizing: border-box;
+  background-color: transparent;
+  color: black;
+  @include d-flex(column, flex-start, stretch, 10vh);
+  padding: 24px 12px;
+  box-shadow: 6px 0 12px rgba(44, 62, 80, 0.12);
+  z-index: 2;
+
+  section {
+    @include d-flex(column, flex-start, stretch, 2vh);
+    button {
+      background: none;
+      border: none;
+      padding: 10px 8px;
+      text-align: left;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.2s ease-in-out;
+      &:hover {
+        background-color: #1565c0;
+      }
+      &.selected {
+        background-color: #1565c0;
+        font-weight: bold;
+      }
+    }
+  }
+}

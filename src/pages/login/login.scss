@@ -1,0 +1,22 @@
+@use '../../style/mixins.scss' as *;
+
+.login {
+  @include d-flex(column, space-between, center);
+  height: 50vh;
+  width: 80vw;
+  &-form {
+    @include d-flex(column, space-between, center, 1vw);
+    height: 50%;
+    &-row {
+      @include d-flex(row, flex-start, center, 2vw);
+      label {
+        text-align: justify;
+        min-width: 5vw;
+      }
+    }
+  }
+  &-error {
+    color: rgb(202, 109, 109);
+    min-height: 1.5rem;
+  }
+}

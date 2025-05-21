@@ -1,0 +1,9 @@
+@use '../../style/mixins.scss' as *;
+
+.weather {
+  @include d-flex(column, center, center, 1vw);
+  padding: 0.8vw;
+  &-list {
+    @include d-flex(row, center, flex-start, 4vw);
+  }
+}

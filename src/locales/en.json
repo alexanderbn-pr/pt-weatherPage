@@ -1,0 +1,41 @@
+{
+  "header": {
+    "logout": "Logout",
+    "title": "Weather Page"
+  },
+  "login": {
+    "title": "Login",
+    "username": "Username: ",
+    "password": "Password: ",
+    "submit": "Sign In",
+    "missingData": "This field is required",
+    "invalidData": "Incorrect username or password"
+  },
+  "navBar": {
+    "contact": "Contact"
+  },
+  "weather": {
+    "error": "There was an error retrieving the weather",
+    "retry": "Reload weather",
+    "loading": "Loading weather...",
+    "day": "Day: ",
+    "max": "Max: ",
+    "min": "Min: ",
+    "interval": {
+      "temperature": "Temperature",
+      "probability": "Rain probability",
+      "wind": "Wind",
+      "description": "Forecast"
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Write to us and we will reply as soon as possible",
+    "name": "Full Name: ",
+    "email": "Email: ",
+    "phone": "Phone: ",
+    "birth": "Date of birth: ",
+    "submit": "Send",
+    "success": "Message sent successfully from {{name}} !"
+  }
+}

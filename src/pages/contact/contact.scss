@@ -1,0 +1,27 @@
+@use '../../style/mixins.scss' as *;
+
+.contact {
+  @include d-flex(column, center, center, 0.5vw);
+  &-form {
+    @include d-flex(column, center, flex-start, 0.7vw);
+    width: 24%;
+    height: 100%;
+    &-required {
+      color: #ff474f;
+    }
+    input {
+      background: white;
+      color: black;
+      &::-webkit-calendar-picker-indicator {
+        filter: invert(1);
+      }
+    }
+    button {
+      &:disabled {
+        background-color: #ccc;
+        color: #fff;
+        cursor: not-allowed;
+      }
+    }
+  }
+}
