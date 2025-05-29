@@ -97,7 +97,16 @@ button {
   a:hover {
     color: #747bff;
   }
-  button {
-    background-color: #f9f9f9;
+  header{
+    h2{
+      color: white;
+    }
+  }
+  .sidebar {
+    section {
+      button{
+        color:#213547; 
+      }
+    }
   }
 }
