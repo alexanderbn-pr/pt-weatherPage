@@ -1,4 +1,4 @@
-# Alexander Bosch - Cuatroochenta
+# Alexander Bosch - WeatherPage
 
 En esta prueba técnica de programación se han realizado las siguientes funcionalidades:
 
