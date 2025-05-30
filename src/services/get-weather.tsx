@@ -1,4 +1,7 @@
 import { Weather } from '../types';
+const WEATHER_API_URL = import.meta.env.VITE_WEATHER_API_URL;
+const WEATHER_API_KEY = import.meta.env.VITE_WEATHER_API_KEY;
+
 export const fetchWeather = async (
   name?: string,
   country?: string,
@@ -6,7 +9,7 @@ export const fetchWeather = async (
 ): Promise<Weather[]> => {
   if (!name || !country) return [];
   return await fetch(
-    `https://api.openweathermap.org/data/2.5/forecast?q=${name},${country}&units=metric&lang=${language}&appid=774f59b8468d23c6d5d9173e4818462d`,
+    `${WEATHER_API_URL}?q=${name},${country}&units=metric&lang=${language}&appid=${WEATHER_API_KEY}`,
   )
     .then((res) => {
       if (!res.ok) throw new Error('Error al obtener los libros');
